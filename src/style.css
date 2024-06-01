@@ -1,0 +1,110 @@
+body {
+  background: rgb(231, 199, 231);
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 60px;
+}
+
+.content {
+  display: block;
+  background-color: rgb(248, 230, 248);
+  border: 2px dashed rgb(187, 101, 180);
+  border-radius: 20px;
+  color: rgb(187, 101, 180);
+  box-shadow: 10px 10px 5px rgb(187, 101, 180);
+  font-family: "Poetsen One", sans-serif;
+  text-align: center;
+}
+section {
+  text-align: left;
+}
+
+header {
+  display: block;
+  margin: 0 auto;
+  padding-top: 40px;
+  border-bottom: 2px dashed rgb(187, 101, 180);
+  text-align: center;
+}
+.inputBar {
+  background-color: rgb(231, 199, 231);
+  margin: 0px 20px;
+  max-width: 100%;
+  font-size: 20px;
+  border: 2px solid rgb(187, 101, 180);
+  border-radius: 6px;
+  padding: 10px;
+  color: rgb(187, 101, 180);
+  box-shadow: 4px 4px 2px rgb(187, 101, 180);
+}
+.searchBtn {
+  background-color: rgb(231, 199, 231);
+  margin: 5px;
+  padding: 10px;
+  border: 2px solid rgb(187, 101, 180);
+  border-radius: 10px;
+  font-size: 20px;
+  color: rgb(187, 101, 180);
+  font-weight: bold;
+  box-shadow: 4px 4px 2px rgb(187, 101, 180);
+  transition: all 200ms linear;
+}
+.searchBtn:hover {
+  cursor: pointer;
+  background: rgb(187, 101, 180);
+  color: rgb(231, 199, 231);
+  box-shadow: 4px 4px 2px rgb(231, 199, 231);
+}
+h1 {
+  font-size: 70px;
+  margin: 30px;
+}
+.temperature {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.icon {
+  font-size: 40px;
+  position: relative;
+  right: -130px;
+  top: -10px;
+}
+.temperatureValue {
+  font-weight: bold;
+  font-size: 70px;
+  position: relative;
+  right: 20px;
+}
+.temperatureUnit {
+  font-size: 20px;
+  position: relative;
+  left: -160px;
+  top: 10px;
+}
+ul {
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: 600px;
+  line-height: 30px;
+  font-weight: 600;
+}
+p {
+  display: flex;
+  justify-content: space-around;
+}
+.date {
+  position: relative;
+  left: -140px;
+  top: 20px;
+}
+.weather {
+  position: relative;
+  left: 90px;
+  top: -90px;
+}
+footer {
+  font-size: 12px;
+  border-top: 3px dashed rgb(187, 101, 180);
+  padding: 30px;
+}

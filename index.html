@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Weather appy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+ <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <section class="content">
+      <header>
+        <form id="search-form">
+          <input
+            class="inputBar"
+            type="text"
+            placeholder="Search your city!"
+            autofocus="on"
+            required
+            id="input-bar"
+          />
+          <input type="submit" value="search" class="searchBtn"/>
+        </form>
+        <h1>Durban</h1>
+      </header>
+      <main>
+        <div class="temperature">
+          <span class="icon" id="icon"></span>
+          <span class="temperatureValue" id="temperature-value">20 </span>
+          <span class="temperatureUnit">°C</span>
+        </div>
+    <p>
+        <ul class="date">
+          <li id="weekday">tuesday</li>
+          <li id="time" >03:11</li>
+          <li id="current-date">8 Jan</li>
+        </ul>
+        <ul class="weather">
+          <li id="humidity">humidity:70%</li>
+          <li id="wind-speed">wind:3km/h</li>
+          <li id="cloud-cover">clouds</li>
+        </ul>  
+    </p>
+ </main>
+      
+      <section>
+        <div class="weatherForcast">
+        <div class="row"> 
+        <div class="col-2"> 
+          <div class="weatherForastDate"> Sat </div>
+          <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="weather-forecast-icon" width="100px">
+<div class="weatherForcastTemp">
+  <span class="weatherForcastMinTemp"> 19°</span> <span class="weatherForcastMaxTemp">29°</span>
+</div>   
+        </div>
+      </div>
+      </div>
+      </section>
+<footer>
+        coded by
+        <a href="https://github.com/nmoloi" target="_blank">Nana Moloi</a> ,
+        open-sourced on
+        <a href="https://github.com/nmoloi/Weather-Appy" target="_blank"
+          >github</a>
+        and hosted on
+        <a href="https://check-weather-appy.netlify.app/" target="_blank">Netlify.</a>
+      </div>
+      </footer>
+    </section>
+    <script src="src/app.js"></script>
+  </body>
+</html>
