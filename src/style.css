@@ -106,16 +106,25 @@ footer {
   border-top: 3px dashed rgb(187, 101, 180);
   padding: 30px;
 }
-.weatherForcast {
-  border-top: 3px dashed rgb(187, 101, 180);
-  padding: 30px;
-  text-align: left;
-}
 main {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 0;
 }
-.weatherForcastMinTemp {
+.weatherForecastDay {
+  display: inline-block;
+  margin: 15px;
+  padding-bottom: 30px;
+  border-top: 3px dashed rgb(187, 101, 180);
+}
+.weatherForecastDate {
+  padding: 10px;
+}
+.weather-forecast-icon {
+  padding: 10px;
+}
+.weatherForecastTemps {
+  padding: 10px;
+}
+.weatherForecastMinTemp {
   font-size: 14px;
   opacity: 0.7;
 }

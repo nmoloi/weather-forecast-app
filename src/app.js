@@ -85,3 +85,27 @@ function formatDate(now) {
   let dayNumber = now.getDate();
   return `${dayNumber} ${month}`;
 }
+
+function displayForecast() {
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+    <div class="weatherForecastDay"> 
+          <div class="weatherForecastDate"> ${day} </div>
+          <div class="weather-forecast-icon"> ⛅</div>
+      <div class="weatherForecastTemps">
+          <span class="weatherForecastMaxTemp"> 29°</span> <span class="weatherForecastMinTemp">19°</span>
+      </div>   
+    </div> 
+    `;
+  });
+
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+
+displayForecast();
