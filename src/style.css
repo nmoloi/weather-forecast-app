@@ -3,6 +3,7 @@ body {
   max-width: 700px;
   margin: 0 auto;
   padding: 40px 60px;
+  text-align: center;
 }
 
 .content {
@@ -13,10 +14,6 @@ body {
   color: rgb(187, 101, 180);
   box-shadow: 10px 10px 5px rgb(187, 101, 180);
   font-family: "Poetsen One", sans-serif;
-  text-align: center;
-}
-section {
-  text-align: left;
 }
 
 header {
@@ -91,7 +88,7 @@ ul {
 }
 p {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .date {
   position: relative;
@@ -103,8 +100,22 @@ p {
   left: 90px;
   top: -90px;
 }
+
 footer {
   font-size: 12px;
   border-top: 3px dashed rgb(187, 101, 180);
   padding: 30px;
+}
+.weatherForcast {
+  border-top: 3px dashed rgb(187, 101, 180);
+  padding: 30px;
+  text-align: left;
+}
+main {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.weatherForcastMinTemp {
+  font-size: 14px;
+  opacity: 0.7;
 }
