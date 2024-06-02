@@ -42,6 +42,8 @@ function displayWeather(response) {
 
   let currentDate = document.querySelector("#current-date");
   currentDate.innerHTML = formatDate(now);
+
+  getForecast(response.data.city);
 }
 function formatWeekday(now) {
   let days = [
@@ -85,8 +87,15 @@ function formatDate(now) {
   let dayNumber = now.getDate();
   return `${dayNumber} ${month}`;
 }
+function getForecast(city) {
+  let apiKey = `613b83077f10b4c656d2ofbe1faebbet`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response);
+
   let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
   let forecastHtml = "";
 
@@ -107,5 +116,3 @@ function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
 }
-
-displayForecast();
